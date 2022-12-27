@@ -29,7 +29,7 @@ class DazButton: UIButton {
         
         
         button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = Fonts.Heading.text5_3
+        button.titleLabel?.font = Fonts.Heading.text18_medium
         button.layer.cornerRadius = 20
         
         return button

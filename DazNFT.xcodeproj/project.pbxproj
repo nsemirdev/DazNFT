@@ -10,7 +10,6 @@
 		FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120207295B874C00626CA6 /* AppDelegate.swift */; };
 		FB12020A295B874C00626CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120209295B874C00626CA6 /* SceneDelegate.swift */; };
 		FB12020C295B874C00626CA6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12020B295B874C00626CA6 /* OnboardingVC.swift */; };
-		FB120211295B874D00626CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB120210295B874D00626CA6 /* Assets.xcassets */; };
 		FB120214295B874D00626CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB120212295B874D00626CA6 /* LaunchScreen.storyboard */; };
 		FB120222295B887400626CA6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120221295B887400626CA6 /* Colors.swift */; };
 		FB120225295B8D5000626CA6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120224295B8D5000626CA6 /* Fonts.swift */; };
@@ -20,6 +19,7 @@
 		FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022D295B9E7000626CA6 /* DazButton.swift */; };
 		FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */; };
 		FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120235295BAABC00626CA6 /* SignUpVC.swift */; };
+		FB120238295BACA700626CA6 /* DazTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120237295BACA700626CA6 /* DazTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,6 @@
 		FB120207295B874C00626CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB120209295B874C00626CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB12020B295B874C00626CA6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
-		FB120210295B874D00626CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB120213295B874D00626CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB120215295B874D00626CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB120221295B887400626CA6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		FB12022D295B9E7000626CA6 /* DazButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazButton.swift; sourceTree = "<group>"; };
 		FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		FB120235295BAABC00626CA6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		FB120237295BACA700626CA6 /* DazTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				FB120215295B874D00626CA6 /* Info.plist */,
-				FB120210295B874D00626CA6 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -105,6 +104,7 @@
 				FB120212295B874D00626CA6 /* LaunchScreen.storyboard */,
 				FB120229295B985B00626CA6 /* GlowBall.swift */,
 				FB12022D295B9E7000626CA6 /* DazButton.swift */,
+				FB120237295BACA700626CA6 /* DazTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB120214295B874D00626CA6 /* LaunchScreen.storyboard in Resources */,
-				FB120211295B874D00626CA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +226,7 @@
 				FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */,
 				FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */,
 				FB12022C295B99C600626CA6 /* DNViewController.swift in Sources */,
+				FB120238295BACA700626CA6 /* DazTextField.swift in Sources */,
 				FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */,
 				FB12020A295B874C00626CA6 /* SceneDelegate.swift in Sources */,
 			);

@@ -6,11 +6,21 @@
 //
 
 import UIKit
+import SnapKit
 
-class SignUpVC: UIViewController {
+final class SignUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
+        let dazText = DazTextField(with: .password, placeholder: "Test")
+        view.addSubview(dazText)
+        
+        dazText.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().offset(-20)
+        }
     }
 }

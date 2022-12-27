@@ -26,8 +26,8 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
     let pageControl: UIPageControl = {
         let pageControl = UIPageControl()
         pageControl.numberOfPages = 3
-        pageControl.currentPageIndicatorTintColor = Colors.Primary.deepPurple
-        pageControl.pageIndicatorTintColor = Colors.Text.allDisabled
+        pageControl.currentPageIndicatorTintColor = UIColor(hex: "#A49BFEFF")
+        pageControl.pageIndicatorTintColor = UIColor(hex: "#C4C4C4FF")
         pageControl.isUserInteractionEnabled = false
         return pageControl
     }()
@@ -41,7 +41,7 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
     
     let firstLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.Heading.text4_3
+        label.font = Fonts.Heading.text24_medium
         label.text = "First Open App"
         label.textAlignment = .center
         return label
@@ -49,7 +49,7 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
     
     let secondLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.General.text4_4
+        label.font = Fonts.General.text12_regular
         label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam duis viverra mattis nullam turpis scelerisque pharetra. Amet, tortor et tortor sed habitant vitae vel. "
         label.textAlignment = .center
         label.textColor = Colors.Text.lowEmp
