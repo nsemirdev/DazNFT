@@ -9,23 +9,34 @@
 /* Begin PBXBuildFile section */
 		FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120207295B874C00626CA6 /* AppDelegate.swift */; };
 		FB12020A295B874C00626CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120209295B874C00626CA6 /* SceneDelegate.swift */; };
-		FB12020C295B874C00626CA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12020B295B874C00626CA6 /* ViewController.swift */; };
+		FB12020C295B874C00626CA6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12020B295B874C00626CA6 /* OnboardingVC.swift */; };
 		FB120211295B874D00626CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB120210295B874D00626CA6 /* Assets.xcassets */; };
 		FB120214295B874D00626CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB120212295B874D00626CA6 /* LaunchScreen.storyboard */; };
 		FB120222295B887400626CA6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120221295B887400626CA6 /* Colors.swift */; };
 		FB120225295B8D5000626CA6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120224295B8D5000626CA6 /* Fonts.swift */; };
+		FB120228295B940900626CA6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB120227295B940900626CA6 /* SnapKit */; };
+		FB12022A295B985B00626CA6 /* GlowBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120229295B985B00626CA6 /* GlowBall.swift */; };
+		FB12022C295B99C600626CA6 /* DNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022B295B99C600626CA6 /* DNViewController.swift */; };
+		FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022D295B9E7000626CA6 /* DazButton.swift */; };
+		FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */; };
+		FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120235295BAABC00626CA6 /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB120204295B874C00626CA6 /* DazNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DazNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB120207295B874C00626CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB120209295B874C00626CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB12020B295B874C00626CA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB12020B295B874C00626CA6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		FB120210295B874D00626CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB120213295B874D00626CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB120215295B874D00626CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB120221295B887400626CA6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FB120224295B8D5000626CA6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FB120229295B985B00626CA6 /* GlowBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowBall.swift; sourceTree = "<group>"; };
+		FB12022B295B99C600626CA6 /* DNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNViewController.swift; sourceTree = "<group>"; };
+		FB12022D295B9E7000626CA6 /* DazButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazButton.swift; sourceTree = "<group>"; };
+		FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		FB120235295BAABC00626CA6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB120228295B940900626CA6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				FB120212295B874D00626CA6 /* LaunchScreen.storyboard */,
+				FB120229295B985B00626CA6 /* GlowBall.swift */,
+				FB12022D295B9E7000626CA6 /* DazButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,7 +112,9 @@
 		FB12021E295B87D800626CA6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB12020B295B874C00626CA6 /* ViewController.swift */,
+				FB12022B295B99C600626CA6 /* DNViewController.swift */,
+				FB12020B295B874C00626CA6 /* OnboardingVC.swift */,
+				FB120235295BAABC00626CA6 /* SignUpVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,6 +122,7 @@
 		FB12021F295B87DE00626CA6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -142,6 +159,9 @@
 			dependencies = (
 			);
 			name = DazNFT;
+			packageProductDependencies = (
+				FB120227295B940900626CA6 /* SnapKit */,
+			);
 			productName = DazNFT;
 			productReference = FB120204295B874C00626CA6 /* DazNFT.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +190,9 @@
 				Base,
 			);
 			mainGroup = FB1201FB295B874C00626CA6;
+			packageReferences = (
+				FB120226295B940900626CA6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FB120205295B874C00626CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,10 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB12020C295B874C00626CA6 /* ViewController.swift in Sources */,
+				FB12020C295B874C00626CA6 /* OnboardingVC.swift in Sources */,
+				FB12022A295B985B00626CA6 /* GlowBall.swift in Sources */,
 				FB120225295B8D5000626CA6 /* Fonts.swift in Sources */,
 				FB120222295B887400626CA6 /* Colors.swift in Sources */,
+				FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */,
 				FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */,
+				FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */,
+				FB12022C295B99C600626CA6 /* DNViewController.swift in Sources */,
+				FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */,
 				FB12020A295B874C00626CA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB120226295B940900626CA6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB120227295B940900626CA6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB120226295B940900626CA6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB1201FC295B874C00626CA6 /* Project object */;
 }

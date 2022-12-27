@@ -35,10 +35,11 @@ extension UIColor {
 }
 
 struct Colors {
+    
     struct Primary {
         static let deepPurple = UIColor(hex: "#5F61F0FF")
         static let dark = UIColor(hex: "#4C4EC0FF")
-        static let darker = UIColor(hex: "#393A90FF")
+        static let darker = UIColor(hex: "#393B3EFF")
         static let darkest = UIColor(hex: "#131330FF")
         static let light = UIColor(hex: "#7f81f3FF")
         static let lighter = UIColor(hex: "#9fa0f6FF")
@@ -58,5 +59,18 @@ struct Colors {
         static let highEmp = UIColor(hex: "#454459ff")
         static let mediumEmp = UIColor(hex: "#616161ff")
         static let lowEmp = UIColor(hex: "#757575ff")
+        static let allDisabled = UIColor(hex: "#c4c4c4ff")
+        static let last = UIColor(hex: "#9999A7ff")
+    }
+    
+    
+    struct Gradient {
+        static let start = UIColor(hex: "#D7D3FFFF")!
+        static let end = UIColor(hex: "#D3E4FF00")!
+    }
+    
+    struct PurpleGradient {
+        static let start = UIColor(hex: "#A49BFEFF")!
+        static let end = UIColor(hex: "#7173EBFF")!
     }
 }
