@@ -103,10 +103,6 @@ class NFTTableViewCell: UITableViewCell {
         containerView.addSubview(nftImage)
         containerView.addSubview(leadingStackView)
         containerView.addSubview(trailingStackView)
-//        contentView.addSubview(nftImage)
-//        contentView.backgroundColor = .blue
-//        contentView.addSubview(leadingStackView)
-//        contentView.addSubview(trailingStackView)
         layout()
     }
     

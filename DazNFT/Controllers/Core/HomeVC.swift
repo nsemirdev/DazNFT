@@ -215,8 +215,10 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: SellerTableViewCell.cellId, for: indexPath) as! SellerTableViewCell
         cell.backgroundColor = .clear
         cell.seller = sellers[indexPath.row]
+        cell.indexOf = indexPath.row
         return cell
     }
+    
 }
 
 extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {

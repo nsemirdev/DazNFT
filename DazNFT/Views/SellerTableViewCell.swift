@@ -12,6 +12,7 @@ class SellerTableViewCell: UITableViewCell {
 
     static let cellId = "SellerTableViewCell"
     let phoneHeight = UIScreen.main.bounds.height
+    var indexOf: Int?
     
     var seller: SellerModel! {
         didSet {
@@ -146,6 +147,7 @@ class SellerTableViewCell: UITableViewCell {
     
     @objc func followButtonPressed() {
         seller.isFollowing = !seller.isFollowing
+        sellers[indexOf!].isFollowing = seller.isFollowing
     }
     
 }

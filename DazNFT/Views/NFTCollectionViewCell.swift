@@ -100,7 +100,7 @@ class NFTCollectionViewCell: UICollectionViewCell {
     
     fileprivate func layout() {
         imageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(phoneHeight < 700 ? 1 : 24)
+            make.top.equalToSuperview().offset(phoneHeight < 700 ? 8 : 24)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
         }
