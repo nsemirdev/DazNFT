@@ -35,7 +35,7 @@ final class OnboardingViewModel {
             }
             if delegate.pageControl.currentPage == 1 {
                 delegate.skipButton.isUserInteractionEnabled = false
-                delegate.skipButton.setTitleColor(delegate.view.backgroundColor, for: .normal)
+                delegate.skipButton.setTitleColor(UIColor.clear, for: .normal)
                 delegate.firstLabel.text = "Pace a Bid"
             }
             

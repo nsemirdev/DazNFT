@@ -10,6 +10,7 @@ import SnapKit
 
 class NFTCollectionViewCell: UICollectionViewCell {
     
+    let phoneHeight = UIScreen.main.bounds.height
     static let cellId = "NFTCollectionViewCell"
     var nftModel: NFT! {
         didSet {
@@ -30,10 +31,10 @@ class NFTCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    let leadingStackView: UIStackView = {
+    lazy var leadingStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 6
+        stackView.spacing = self.phoneHeight < 700 ? 2 : 6
         stackView.alignment = .leading
         
         let firstLabel = UILabel()
@@ -58,9 +59,9 @@ class NFTCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
-    let trailingStackView: UIStackView = {
+    lazy var trailingStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.spacing = 6
+        stackView.spacing = phoneHeight < 700 ? 2 : 6
         stackView.alignment = .trailing
         stackView.axis = .vertical
         
@@ -79,8 +80,8 @@ class NFTCollectionViewCell: UICollectionViewCell {
         thirdButton.layer.cornerRadius = 7
         thirdButton.backgroundColor = UIColor(hex: "#A49BFEFF")
         thirdButton.snp.makeConstraints { make in
-            make.height.equalTo(25)
-            make.width.equalTo(70)
+            make.height.equalTo(self.phoneHeight < 700 ? 20 : 25)
+            make.width.equalTo(self.phoneHeight < 700 ? 60 : 70)
         }
         
         stackView.addArrangedSubview(firstLabel)
@@ -100,19 +101,19 @@ class NFTCollectionViewCell: UICollectionViewCell {
     
     fileprivate func layout() {
         imageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(24)
+            make.top.equalToSuperview().offset(phoneHeight < 700 ? 1 : 24)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
         }
         
         leadingStackView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(23)
-            make.top.equalTo(imageView.snp.bottom).offset(23)
+            make.leading.equalToSuperview().offset(phoneHeight < 700 ? 10 : 23)
+            make.top.equalTo(imageView.snp.bottom).offset(phoneHeight < 700 ? 4 : 23)
         }
         
         trailingStackView.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(-23)
-            make.top.equalTo(imageView.snp.bottom).offset(23)
+            make.trailing.equalToSuperview().offset(phoneHeight < 700 ? -10 : -23)
+            make.top.equalTo(imageView.snp.bottom).offset(phoneHeight < 700 ? 4 : 23)
         }
     }
     

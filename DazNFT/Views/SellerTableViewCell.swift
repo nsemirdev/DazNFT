@@ -11,6 +11,7 @@ import SnapKit
 class SellerTableViewCell: UITableViewCell {
 
     static let cellId = "SellerTableViewCell"
+    let phoneHeight = UIScreen.main.bounds.height
     
     var seller: SellerModel! {
         didSet {
@@ -87,10 +88,14 @@ class SellerTableViewCell: UITableViewCell {
         return stackView
     }()
     
-    let dummyView: UIView = {
+    lazy var dummyView: UIView = {
         let view = UIView()
         view.snp.makeConstraints { make in
-            make.width.equalTo(30)
+            if phoneHeight < 700 {
+                make.width.equalTo(3)
+            } else {
+                make.width.equalTo(30)
+            }
         }
         return view
     }()
