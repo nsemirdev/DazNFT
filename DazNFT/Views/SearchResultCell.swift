@@ -1,39 +1,36 @@
 //
-//  SellerTableViewCell.swift
+//  SearchResultCell.swift
 //  DazNFT
 //
 //  Created by Emir Alkal on 28.12.2022.
 //
 
 import UIKit
-import SnapKit
 
-class SellerTableViewCell: UITableViewCell {
-
-    static let cellId = "SellerTableViewCell"
+class SearchResultCell: UITableViewCell {
+    static let cellId = "SearchResultCell"
     let phoneHeight = UIScreen.main.bounds.height
-    
+
     var seller: SellerModel! {
         didSet {
             DispatchQueue.main.async {
-                (self.stackView.subviews[0] as? UILabel)?.text = "\(self.seller.index ?? 0)"
-                (self.stackView.subviews[1] as? UIImageView)?.image = UIImage(named: self.seller.profileImageName)
-                (self.stackView.subviews[2].subviews[0] as? UILabel)?.text = self.seller.name
-                (self.stackView.subviews[2].subviews[1] as? UILabel)?.text = self.seller.price
-                
+                (self.stackView.subviews[0] as? UIImageView)?.image = UIImage(named: self.seller.profileImageName)
+                (self.stackView.subviews[1].subviews[0] as? UILabel)?.text = self.seller.name
+                (self.stackView.subviews[1].subviews[1] as? UILabel)?.text = "\(self.seller.followersCounter ?? 0) Followers"
+
                 if self.seller.isFollowing {
-                    (self.stackView.subviews[4] as? UIButton)?.setTitleColor(.white, for: .normal)
-                    (self.stackView.subviews[4] as? UIButton)?.backgroundColor = UIColor(hex: "#A49BFEFF")
-                    (self.stackView.subviews[4] as? UIButton)?.setTitle("Follow", for: .normal)
+                    (self.stackView.subviews[3] as? UIButton)?.setTitleColor(.white, for: .normal)
+                    (self.stackView.subviews[3] as? UIButton)?.backgroundColor = UIColor(hex: "#A49BFEFF")
+                    (self.stackView.subviews[3] as? UIButton)?.setTitle("Follow", for: .normal)
                 } else {
-                    (self.stackView.subviews[4] as? UIButton)?.setTitleColor(UIColor(hex: "#A49BFEFF"), for: .normal)
-                    (self.stackView.subviews[4] as? UIButton)?.backgroundColor = .clear
-                    (self.stackView.subviews[4] as? UIButton)?.setTitle("Following", for: .normal)
+                    (self.stackView.subviews[3] as? UIButton)?.setTitleColor(UIColor(hex: "#9E9E9EFF"), for: .normal)
+                    (self.stackView.subviews[3] as? UIButton)?.backgroundColor = UIColor(hex: "#F2F2F2FF")
+                    (self.stackView.subviews[3] as? UIButton)?.setTitle("Unfollow", for: .normal)
                 }
             }
         }
     }
-
+    
     let containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -46,14 +43,6 @@ class SellerTableViewCell: UITableViewCell {
         stackView.axis = .horizontal
         stackView.spacing = 18
         return stackView
-    }()
-    
-    let countLabel: UILabel = {
-        let label = UILabel()
-        label.font = Fonts.Heading.text18_bold
-        label.textColor = UIColor(hex: "#393A90FF")
-        label.text = "1"
-        return label
     }()
     
     let profileImageView: UIImageView = {
@@ -78,13 +67,13 @@ class SellerTableViewCell: UITableViewCell {
         nameLabel.textColor = UIColor(hex: "#393A90FF")
         nameLabel.text = "Antonio"
         
-        let priceLabel = UILabel()
-        priceLabel.font = Fonts.General.text14_regular
-        priceLabel.textColor = UIColor(hex: "#393A90FF")
-        priceLabel.text = "$765,50"
+        let followersLabel = UILabel()
+        followersLabel.font = Fonts.General.text14_regular
+        followersLabel.textColor = UIColor(hex: "#9E9E9EFF")
+        followersLabel.text = "2.7k Followers"
         
         stackView.addArrangedSubview(nameLabel)
-        stackView.addArrangedSubview(priceLabel)
+        stackView.addArrangedSubview(followersLabel)
         return stackView
     }()
     
@@ -92,7 +81,7 @@ class SellerTableViewCell: UITableViewCell {
         let view = UIView()
         view.snp.makeConstraints { make in
             if phoneHeight < 700 {
-                make.width.equalTo(3)
+                make.width.equalTo(20)
             } else {
                 make.width.equalTo(30)
             }
@@ -118,7 +107,6 @@ class SellerTableViewCell: UITableViewCell {
         contentView.addSubview(containerView)
         containerView.addSubview(stackView)
         
-        stackView.addArrangedSubview(countLabel)
         stackView.addArrangedSubview(profileImageView)
         stackView.addArrangedSubview(labelStack)
         stackView.addArrangedSubview(dummyView)
@@ -139,7 +127,7 @@ class SellerTableViewCell: UITableViewCell {
             make.trailing.equalToSuperview().offset(-15)
         }
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

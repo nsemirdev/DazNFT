@@ -44,7 +44,7 @@ class MainTabBar: UITabBarController {
         homeNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 26").withRenderingMode(.alwaysTemplate)
         homeNavVC.tabBarItem.title = "Home"
         
-        let searchNavVC = UINavigationController(rootViewController: DNViewController())
+        let searchNavVC = UINavigationController(rootViewController: SearchVC())
         searchNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 25").withRenderingMode(.alwaysTemplate)
         searchNavVC.tabBarItem.title = "Search"
         

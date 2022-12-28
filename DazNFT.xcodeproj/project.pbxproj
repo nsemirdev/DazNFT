@@ -20,6 +20,8 @@
 		FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120235295BAABC00626CA6 /* SignUpVC.swift */; };
 		FB120238295BACA700626CA6 /* DazTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120237295BACA700626CA6 /* DazTextField.swift */; };
 		FB2CB2F7295CD7FC00283B69 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB2F6295CD7FC00283B69 /* UIView.swift */; };
+		FB2CB2FD295CDA4700283B69 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB2FC295CDA4700283B69 /* SearchVC.swift */; };
+		FB2CB2FF295CE55E00283B69 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB2FE295CE55E00283B69 /* SearchResultCell.swift */; };
 		FB4F8E51295C46F000F61AE9 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E50295C46F000F61AE9 /* UIApplication.swift */; };
 		FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */; };
 		FB4F8E55295C512E00F61AE9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */; };
@@ -48,6 +50,8 @@
 		FB120235295BAABC00626CA6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		FB120237295BACA700626CA6 /* DazTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazTextField.swift; sourceTree = "<group>"; };
 		FB2CB2F6295CD7FC00283B69 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FB2CB2FC295CDA4700283B69 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		FB2CB2FE295CE55E00283B69 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		FB4F8E50295C46F000F61AE9 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				FB120237295BACA700626CA6 /* DazTextField.swift */,
 				FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */,
 				FB4F8E61295C870700F61AE9 /* NFTCollectionViewCell.swift */,
+				FB2CB2FE295CE55E00283B69 /* SearchResultCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,11 +143,10 @@
 		FB12021E295B87D800626CA6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB12022B295B99C600626CA6 /* DNViewController.swift */,
-				FB12020B295B874C00626CA6 /* OnboardingVC.swift */,
-				FB120235295BAABC00626CA6 /* SignUpVC.swift */,
-				FB4F8E56295C5C6F00F61AE9 /* SuccessVC.swift */,
-				FB4F8E58295C609A00F61AE9 /* HomeVC.swift */,
+				FB2CB2FB295CDA2300283B69 /* Base */,
+				FB2CB2FA295CDA1D00283B69 /* Other */,
+				FB2CB2F9295CDA1800283B69 /* Auth */,
+				FB2CB2F8295CDA1300283B69 /* Core */,
 				FB4F8E5A295C616300F61AE9 /* MainTabBar.swift */,
 			);
 			path = Controllers;
@@ -163,6 +167,40 @@
 				FB120224295B8D5000626CA6 /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FB2CB2F8295CDA1300283B69 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FB4F8E58295C609A00F61AE9 /* HomeVC.swift */,
+				FB2CB2FC295CDA4700283B69 /* SearchVC.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FB2CB2F9295CDA1800283B69 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FB120235295BAABC00626CA6 /* SignUpVC.swift */,
+				FB4F8E56295C5C6F00F61AE9 /* SuccessVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FB2CB2FA295CDA1D00283B69 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FB12020B295B874C00626CA6 /* OnboardingVC.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FB2CB2FB295CDA2300283B69 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FB12022B295B99C600626CA6 /* DNViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		FB4F8E4F295C46E900F61AE9 /* Extensions */ = {
@@ -272,6 +310,8 @@
 				FB4F8E59295C609A00F61AE9 /* HomeVC.swift in Sources */,
 				FB2CB2F7295CD7FC00283B69 /* UIView.swift in Sources */,
 				FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */,
+				FB2CB2FF295CE55E00283B69 /* SearchResultCell.swift in Sources */,
+				FB2CB2FD295CDA4700283B69 /* SearchVC.swift in Sources */,
 				FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */,
 				FB4F8E64295C93D000F61AE9 /* NFT.swift in Sources */,
 				FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */,
