@@ -20,6 +20,7 @@ class MainTabBar: UITabBarController {
         UITabBar.appearance().unselectedItemTintColor = .black
 
         tabBar.layer.cornerRadius = 20
+        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         tabBar.backgroundColor = .systemBackground
         plusView.translatesAutoresizingMaskIntoConstraints = false
         plusView.heightAnchor.constraint(equalToConstant: 54).isActive = true
