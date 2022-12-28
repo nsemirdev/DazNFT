@@ -23,7 +23,7 @@ class DNViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         topCircle.frame = .init(x: 48, y: -356, width: 738, height: 738)
-        bottomCircle.frame = .init(x: -281, y: 650, width: 738, height: 738)
+        bottomCircle.frame = .init(x: -281, y: 370, width: 738, height: 738)
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {

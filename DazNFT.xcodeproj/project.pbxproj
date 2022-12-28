@@ -27,6 +27,8 @@
 		FB4F8E5B295C616300F61AE9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E5A295C616300F61AE9 /* MainTabBar.swift */; };
 		FB4F8E5D295C716200F61AE9 /* SellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */; };
 		FB4F8E60295C7D4800F61AE9 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E5F295C7D4800F61AE9 /* Seller.swift */; };
+		FB4F8E62295C870700F61AE9 /* NFTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E61295C870700F61AE9 /* NFTCollectionViewCell.swift */; };
+		FB4F8E64295C93D000F61AE9 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E63295C93CF00F61AE9 /* NFT.swift */; };
 		FB959F47295BB433000FD311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB959F46295BB433000FD311 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		FB4F8E5A295C616300F61AE9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerTableViewCell.swift; sourceTree = "<group>"; };
 		FB4F8E5F295C7D4800F61AE9 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		FB4F8E61295C870700F61AE9 /* NFTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB4F8E63295C93CF00F61AE9 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
 		FB959F46295BB433000FD311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,7 @@
 				FB12022D295B9E7000626CA6 /* DazButton.swift */,
 				FB120237295BACA700626CA6 /* DazTextField.swift */,
 				FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */,
+				FB4F8E61295C870700F61AE9 /* NFTCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FB4F8E5F295C7D4800F61AE9 /* Seller.swift */,
+				FB4F8E63295C93CF00F61AE9 /* NFT.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 				FB4F8E5D295C716200F61AE9 /* SellerTableViewCell.swift in Sources */,
 				FB4F8E51295C46F000F61AE9 /* UIApplication.swift in Sources */,
 				FB4F8E55295C512E00F61AE9 /* SignUpViewModel.swift in Sources */,
+				FB4F8E62295C870700F61AE9 /* NFTCollectionViewCell.swift in Sources */,
 				FB4F8E57295C5C6F00F61AE9 /* SuccessVC.swift in Sources */,
 				FB12020C295B874C00626CA6 /* OnboardingVC.swift in Sources */,
 				FB12022A295B985B00626CA6 /* GlowBall.swift in Sources */,
@@ -262,6 +269,7 @@
 				FB4F8E59295C609A00F61AE9 /* HomeVC.swift in Sources */,
 				FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */,
 				FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */,
+				FB4F8E64295C93D000F61AE9 /* NFT.swift in Sources */,
 				FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */,
 				FB12022C295B99C600626CA6 /* DNViewController.swift in Sources */,
 				FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */,
