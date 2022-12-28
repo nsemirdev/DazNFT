@@ -24,6 +24,7 @@
 		FB2CB2FF295CE55E00283B69 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB2FE295CE55E00283B69 /* SearchResultCell.swift */; };
 		FB2CB301295CF0AB00283B69 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB300295CF0AB00283B69 /* ExploreVC.swift */; };
 		FB2CB303295CF70C00283B69 /* NFTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB302295CF70C00283B69 /* NFTTableViewCell.swift */; };
+		FB2CB305295CFB4800283B69 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB304295CFB4800283B69 /* AccountVC.swift */; };
 		FB4F8E51295C46F000F61AE9 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E50295C46F000F61AE9 /* UIApplication.swift */; };
 		FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */; };
 		FB4F8E55295C512E00F61AE9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */; };
@@ -56,6 +57,7 @@
 		FB2CB2FE295CE55E00283B69 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		FB2CB300295CF0AB00283B69 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		FB2CB302295CF70C00283B69 /* NFTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTTableViewCell.swift; sourceTree = "<group>"; };
+		FB2CB304295CFB4800283B69 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		FB4F8E50295C46F000F61AE9 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				FB4F8E58295C609A00F61AE9 /* HomeVC.swift */,
 				FB2CB2FC295CDA4700283B69 /* SearchVC.swift */,
 				FB2CB300295CF0AB00283B69 /* ExploreVC.swift */,
+				FB2CB304295CFB4800283B69 /* AccountVC.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */,
 				FB12022C295B99C600626CA6 /* DNViewController.swift in Sources */,
 				FB2CB301295CF0AB00283B69 /* ExploreVC.swift in Sources */,
+				FB2CB305295CFB4800283B69 /* AccountVC.swift in Sources */,
 				FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */,
 				FB4F8E5B295C616300F61AE9 /* MainTabBar.swift in Sources */,
 				FB120238295BACA700626CA6 /* DazTextField.swift in Sources */,

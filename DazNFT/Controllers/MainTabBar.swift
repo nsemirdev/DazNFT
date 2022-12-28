@@ -56,7 +56,7 @@ class MainTabBar: UITabBarController {
         exploreNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 24").withRenderingMode(.alwaysTemplate)
         exploreNavVC.tabBarItem.title = "Explore"
         
-        let profileNavVC = UINavigationController(rootViewController: DNViewController())
+        let profileNavVC = UINavigationController(rootViewController: AccountVC())
         profileNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 27").withRenderingMode(.alwaysTemplate)
         profileNavVC.tabBarItem.title = "Profile"
         
