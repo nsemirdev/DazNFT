@@ -17,6 +17,7 @@ class DNViewController: UIViewController {
             view.addSubview(topCircle)
             view.addSubview(bottomCircle)
         }
+        view.backgroundColor = .systemBackground
     }
     
     override func viewDidLayoutSubviews() {

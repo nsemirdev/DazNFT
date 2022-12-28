@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background 1@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background 1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

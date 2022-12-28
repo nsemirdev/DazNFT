@@ -52,7 +52,7 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
         label.font = Fonts.General.text12_regular
         label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam duis viverra mattis nullam turpis scelerisque pharetra. Amet, tortor et tortor sed habitant vitae vel. "
         label.textAlignment = .center
-        label.textColor = Colors.Text.lowEmp
+        label.textColor = UIColor(hex: "#9999A7FF")
         label.numberOfLines = 0
         return label
     }()
@@ -70,7 +70,7 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
     let skipButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Skip", for: .normal)
-        button.setTitleColor(Colors.Text.last, for: .normal)
+        button.setTitleColor(UIColor(hex: "#9999A7FF"), for: .normal)
         button.addTarget(nil, action: #selector(skipButtonPressed), for: .touchUpInside)
         return button
     }()
@@ -87,7 +87,7 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
     }
     
     @objc func skipButtonPressed() {
-        viewModel.pushSignInVC()
+        viewModel.performSegue()
     }
     
     override func viewDidLoad() {
@@ -145,9 +145,7 @@ final class OnboardingVC: DNViewController, OnboardingVMDelegate {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let colors = [Colors.PurpleGradient.start.cgColor,
-                      Colors.PurpleGradient.end.cgColor]
-        nextButton.applyGradient(colors: colors, cornerRadius: 20)
+        nextButton.applyGradient(colors: [UIColor(hex: "#A49BFEFF")!.cgColor, UIColor(hex: "#7173EBFF")!.cgColor], cornerRadius: 20)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

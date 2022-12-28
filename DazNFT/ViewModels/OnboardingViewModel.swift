@@ -18,7 +18,7 @@ protocol OnboardingVMDelegate {
     func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?)
 }
 
-class OnboardingViewModel {
+final class OnboardingViewModel {
     var delegate: OnboardingVMDelegate?
     let pageImages = [#imageLiteral(resourceName: "1 1"), #imageLiteral(resourceName: "Group 151"), #imageLiteral(resourceName: "1 1")]
     
@@ -26,7 +26,7 @@ class OnboardingViewModel {
         guard let delegate else { return }
         
         if delegate.pageControl.currentPage == 2 {
-            pushSignInVC()
+            performSegue()
         }
         
         if delegate.pageControl.currentPage < 2 {
@@ -44,7 +44,7 @@ class OnboardingViewModel {
         }
     }
     
-    func pushSignInVC() {
+    func performSegue() {
         let signInVC = SignUpVC()
         signInVC.modalPresentationStyle = .fullScreen
         signInVC.modalTransitionStyle = .crossDissolve // BUG HINT!

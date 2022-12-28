@@ -57,11 +57,9 @@ final class DazTextField: UIView {
         super.init(frame: .zero)
         configure(with: type)
         let attr = NSAttributedString(string: placeholder, attributes: [
-            .foregroundColor: Colors.Text.last as Any
+            .foregroundColor: UIColor(hex: "#9999A7FF")!
         ])
         textField.attributedPlaceholder = attr
-        
-        
     }
     
     fileprivate func darkMode() {
@@ -75,7 +73,7 @@ final class DazTextField: UIView {
     fileprivate func configure(with type: TextFieldType) {
         layer.cornerRadius = 10
         layer.borderWidth = 1
-        layer.borderColor = #colorLiteral(red: 0.6431372549, green: 0.6078431373, blue: 0.9960784314, alpha: 1)
+        layer.borderColor = #colorLiteral(red: 0.6451733708, green: 0.6105852723, blue: 0.9989337325, alpha: 1)
         
         addSubview(stackView)
         

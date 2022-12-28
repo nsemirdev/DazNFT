@@ -11,7 +11,6 @@
 		FB12020A295B874C00626CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120209295B874C00626CA6 /* SceneDelegate.swift */; };
 		FB12020C295B874C00626CA6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12020B295B874C00626CA6 /* OnboardingVC.swift */; };
 		FB120214295B874D00626CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB120212295B874D00626CA6 /* LaunchScreen.storyboard */; };
-		FB120222295B887400626CA6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120221295B887400626CA6 /* Colors.swift */; };
 		FB120225295B8D5000626CA6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120224295B8D5000626CA6 /* Fonts.swift */; };
 		FB120228295B940900626CA6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB120227295B940900626CA6 /* SnapKit */; };
 		FB12022A295B985B00626CA6 /* GlowBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120229295B985B00626CA6 /* GlowBall.swift */; };
@@ -20,6 +19,14 @@
 		FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */; };
 		FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120235295BAABC00626CA6 /* SignUpVC.swift */; };
 		FB120238295BACA700626CA6 /* DazTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120237295BACA700626CA6 /* DazTextField.swift */; };
+		FB4F8E51295C46F000F61AE9 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E50295C46F000F61AE9 /* UIApplication.swift */; };
+		FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */; };
+		FB4F8E55295C512E00F61AE9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */; };
+		FB4F8E57295C5C6F00F61AE9 /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E56295C5C6F00F61AE9 /* SuccessVC.swift */; };
+		FB4F8E59295C609A00F61AE9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E58295C609A00F61AE9 /* HomeVC.swift */; };
+		FB4F8E5B295C616300F61AE9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E5A295C616300F61AE9 /* MainTabBar.swift */; };
+		FB4F8E5D295C716200F61AE9 /* SellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */; };
+		FB4F8E60295C7D4800F61AE9 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E5F295C7D4800F61AE9 /* Seller.swift */; };
 		FB959F47295BB433000FD311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB959F46295BB433000FD311 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +37,6 @@
 		FB12020B295B874C00626CA6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		FB120213295B874D00626CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB120215295B874D00626CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB120221295B887400626CA6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FB120224295B8D5000626CA6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FB120229295B985B00626CA6 /* GlowBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowBall.swift; sourceTree = "<group>"; };
 		FB12022B295B99C600626CA6 /* DNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,14 @@
 		FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		FB120235295BAABC00626CA6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		FB120237295BACA700626CA6 /* DazTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazTextField.swift; sourceTree = "<group>"; };
+		FB4F8E50295C46F000F61AE9 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FB4F8E56295C5C6F00F61AE9 /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
+		FB4F8E58295C609A00F61AE9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FB4F8E5A295C616300F61AE9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerTableViewCell.swift; sourceTree = "<group>"; };
+		FB4F8E5F295C7D4800F61AE9 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 		FB959F46295BB433000FD311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +86,9 @@
 		FB120206295B874C00626CA6 /* DazNFT */ = {
 			isa = PBXGroup;
 			children = (
+				FB4F8E5E295C7D4100F61AE9 /* Models */,
+				FB4F8E4F295C46E900F61AE9 /* Extensions */,
 				FB120223295B8D4B00626CA6 /* Fonts */,
-				FB120220295B881C00626CA6 /* Colors */,
 				FB12021F295B87DE00626CA6 /* ViewModels */,
 				FB12021E295B87D800626CA6 /* Controllers */,
 				FB12021D295B87CC00626CA6 /* Views */,
@@ -108,6 +123,7 @@
 				FB120229295B985B00626CA6 /* GlowBall.swift */,
 				FB12022D295B9E7000626CA6 /* DazButton.swift */,
 				FB120237295BACA700626CA6 /* DazTextField.swift */,
+				FB4F8E5C295C716200F61AE9 /* SellerTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +134,9 @@
 				FB12022B295B99C600626CA6 /* DNViewController.swift */,
 				FB12020B295B874C00626CA6 /* OnboardingVC.swift */,
 				FB120235295BAABC00626CA6 /* SignUpVC.swift */,
+				FB4F8E56295C5C6F00F61AE9 /* SuccessVC.swift */,
+				FB4F8E58295C609A00F61AE9 /* HomeVC.swift */,
+				FB4F8E5A295C616300F61AE9 /* MainTabBar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,16 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */,
+				FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		FB120220295B881C00626CA6 /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				FB120221295B887400626CA6 /* Colors.swift */,
-			);
-			path = Colors;
 			sourceTree = "<group>";
 		};
 		FB120223295B8D4B00626CA6 /* Fonts */ = {
@@ -144,6 +156,23 @@
 				FB120224295B8D5000626CA6 /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FB4F8E4F295C46E900F61AE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB4F8E50295C46F000F61AE9 /* UIApplication.swift */,
+				FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FB4F8E5E295C7D4100F61AE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB4F8E5F295C7D4800F61AE9 /* Seller.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,14 +251,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4F8E5D295C716200F61AE9 /* SellerTableViewCell.swift in Sources */,
+				FB4F8E51295C46F000F61AE9 /* UIApplication.swift in Sources */,
+				FB4F8E55295C512E00F61AE9 /* SignUpViewModel.swift in Sources */,
+				FB4F8E57295C5C6F00F61AE9 /* SuccessVC.swift in Sources */,
 				FB12020C295B874C00626CA6 /* OnboardingVC.swift in Sources */,
 				FB12022A295B985B00626CA6 /* GlowBall.swift in Sources */,
+				FB4F8E60295C7D4800F61AE9 /* Seller.swift in Sources */,
 				FB120225295B8D5000626CA6 /* Fonts.swift in Sources */,
-				FB120222295B887400626CA6 /* Colors.swift in Sources */,
+				FB4F8E59295C609A00F61AE9 /* HomeVC.swift in Sources */,
 				FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */,
 				FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */,
 				FB12022E295B9E7000626CA6 /* DazButton.swift in Sources */,
 				FB12022C295B99C600626CA6 /* DNViewController.swift in Sources */,
+				FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */,
+				FB4F8E5B295C616300F61AE9 /* MainTabBar.swift in Sources */,
 				FB120238295BACA700626CA6 /* DazTextField.swift in Sources */,
 				FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */,
 				FB12020A295B874C00626CA6 /* SceneDelegate.swift in Sources */,
