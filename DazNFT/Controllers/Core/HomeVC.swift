@@ -24,12 +24,9 @@ class HomeVC: DNViewController {
     let collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 16)
-        // %6 width
-        // %34 height
-//        print( UIScreen.main.bounds.width * 6 / 100)
+
         layout.itemSize = .init(width: UIScreen.main.bounds.width * 60 / 100,
                                 height: UIScreen.main.bounds.height * 36 / 100)
-//        layout.itemSize = CGSize(width: 250, height: 290)
         layout.scrollDirection = .horizontal
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -81,7 +78,7 @@ class HomeVC: DNViewController {
         rightButton.setTitleColor(UIColor(hex: "#A49BFEFF"), for: .normal)
         rightButton.setTitle("See All", for: .normal)
         rightButton.titleLabel?.font = Fonts.Heading.text18_semibold
-        
+        rightButton.addTarget(nil, action: #selector(handleSeeAllTableView), for: .touchUpInside)
         view.addSubview(leftLabel)
         view.addSubview(rightButton)
         
@@ -101,6 +98,53 @@ class HomeVC: DNViewController {
         return view
     }()
 
+    var isTableViewFullSize = false
+    
+    @objc func handleSeeAllTableView() {
+        
+        if isTableViewFullSize {
+            tableViewHeader.snp.removeConstraints()
+            view.addSubview(collectionView)
+            view.addSubview(collectionViewHeader)
+            
+            collectionViewHeader.snp.makeConstraints { make in
+                make.leading.equalToSuperview().offset(20)
+                make.trailing.equalToSuperview().offset(-20)
+                make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(28)
+            }
+            
+            collectionView.snp.makeConstraints { make in
+                make.top.equalTo(collectionViewHeader.snp.bottom).offset(12)
+                make.leading.equalToSuperview().offset(20)
+                make.trailing.equalToSuperview()
+                make.bottom.equalTo(view.snp.centerY).offset(85)
+            }
+            
+            tableViewHeader.snp.makeConstraints { make in
+                make.leading.equalToSuperview().offset(20)
+                make.trailing.equalToSuperview().offset(-20)
+                make.top.equalTo(collectionView.snp.bottom).offset(20)
+                make.height.equalTo(25)
+            }
+            
+            (tableViewHeader.subviews[1] as? UIButton)?.setTitle("See More", for: .normal)
+            isTableViewFullSize = false
+        } else {
+            collectionView.removeFromSuperview()
+            collectionViewHeader.removeFromSuperview()
+            tableViewHeader.snp.removeConstraints()
+                
+            tableViewHeader.snp.makeConstraints { make in
+                make.leading.equalToSuperview().offset(22)
+                make.trailing.equalToSuperview().offset(-22)
+                make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(12)
+                make.height.equalTo(25)
+            }
+            
+            (tableViewHeader.subviews[1] as? UIButton)?.setTitle("See Less", for: .normal)
+            isTableViewFullSize = true
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
