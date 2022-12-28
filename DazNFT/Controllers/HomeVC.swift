@@ -45,8 +45,8 @@ class HomeVC: DNViewController {
         
         let leftLabel = UILabel()
         leftLabel.font = Fonts.Heading.text18_bold
-        leftLabel.text = "Top NFTs"
-        leftLabel.textColor = UIColor(hex: "#393A90FF")
+        leftLabel.text = "Featured NFTs"
+        leftLabel.textColor = UIColor(hex: "#454459FF")
         
         let rightButton = UIButton(type: .system)
         rightButton.setTitleColor(UIColor(hex: "#A49BFEFF"), for: .normal)
@@ -75,7 +75,7 @@ class HomeVC: DNViewController {
         let leftLabel = UILabel()
         leftLabel.font = Fonts.Heading.text18_bold
         leftLabel.text = "Top Sellers"
-        leftLabel.textColor = UIColor(hex: "#393A90FF")
+        leftLabel.textColor = UIColor(hex: "#454459FF")
         
         let rightButton = UIButton(type: .system)
         rightButton.setTitleColor(UIColor(hex: "#A49BFEFF"), for: .normal)
@@ -152,7 +152,6 @@ class HomeVC: DNViewController {
         
         rightBarButtonItem.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-20)
-            make.top.equalToSuperview().offset(45)
             make.bottom.equalTo(navigationController!.navigationBar.snp.bottom)
         }
     }

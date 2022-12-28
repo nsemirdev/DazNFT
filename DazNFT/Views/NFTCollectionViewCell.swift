@@ -39,7 +39,7 @@ class NFTCollectionViewCell: UICollectionViewCell {
         
         let firstLabel = UILabel()
         firstLabel.font = Fonts.Heading.text18_bold
-        firstLabel.textColor = UIColor(hex: "#393A90FF")
+        firstLabel.textColor = UIColor(hex: "#454459FF")
         firstLabel.text = "Design Mania"
         
         let secondLabel = UILabel()
@@ -107,12 +107,12 @@ class NFTCollectionViewCell: UICollectionViewCell {
         }
         
         leadingStackView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(phoneHeight < 700 ? 10 : 23)
+            make.leading.equalToSuperview().offset(phoneHeight < 700 ? 10 : 18)
             make.top.equalTo(imageView.snp.bottom).offset(phoneHeight < 700 ? 4 : 23)
         }
         
         trailingStackView.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(phoneHeight < 700 ? -10 : -23)
+            make.trailing.equalToSuperview().offset(phoneHeight < 700 ? -10 : -18)
             make.top.equalTo(imageView.snp.bottom).offset(phoneHeight < 700 ? 4 : 23)
         }
     }

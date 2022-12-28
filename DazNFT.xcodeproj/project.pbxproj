@@ -19,6 +19,7 @@
 		FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */; };
 		FB120236295BAABC00626CA6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120235295BAABC00626CA6 /* SignUpVC.swift */; };
 		FB120238295BACA700626CA6 /* DazTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120237295BACA700626CA6 /* DazTextField.swift */; };
+		FB2CB2F7295CD7FC00283B69 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB2F6295CD7FC00283B69 /* UIView.swift */; };
 		FB4F8E51295C46F000F61AE9 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E50295C46F000F61AE9 /* UIApplication.swift */; };
 		FB4F8E53295C4A1F00F61AE9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */; };
 		FB4F8E55295C512E00F61AE9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */; };
@@ -46,6 +47,7 @@
 		FB12022F295BA8F000626CA6 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		FB120235295BAABC00626CA6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		FB120237295BACA700626CA6 /* DazTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazTextField.swift; sourceTree = "<group>"; };
+		FB2CB2F6295CD7FC00283B69 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FB4F8E50295C46F000F61AE9 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FB4F8E54295C512E00F61AE9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -90,14 +92,14 @@
 		FB120206295B874C00626CA6 /* DazNFT */ = {
 			isa = PBXGroup;
 			children = (
-				FB4F8E5E295C7D4100F61AE9 /* Models */,
-				FB4F8E4F295C46E900F61AE9 /* Extensions */,
+				FB12021B295B877400626CA6 /* AppDelegate */,
+				FB12021C295B878600626CA6 /* Resources */,
 				FB120223295B8D4B00626CA6 /* Fonts */,
+				FB4F8E4F295C46E900F61AE9 /* Extensions */,
+				FB4F8E5E295C7D4100F61AE9 /* Models */,
+				FB12021D295B87CC00626CA6 /* Views */,
 				FB12021F295B87DE00626CA6 /* ViewModels */,
 				FB12021E295B87D800626CA6 /* Controllers */,
-				FB12021D295B87CC00626CA6 /* Views */,
-				FB12021C295B878600626CA6 /* Resources */,
-				FB12021B295B877400626CA6 /* AppDelegate */,
 			);
 			path = DazNFT;
 			sourceTree = "<group>";
@@ -168,6 +170,7 @@
 			children = (
 				FB4F8E50295C46F000F61AE9 /* UIApplication.swift */,
 				FB4F8E52295C4A1F00F61AE9 /* UIColor.swift */,
+				FB2CB2F6295CD7FC00283B69 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				FB4F8E60295C7D4800F61AE9 /* Seller.swift in Sources */,
 				FB120225295B8D5000626CA6 /* Fonts.swift in Sources */,
 				FB4F8E59295C609A00F61AE9 /* HomeVC.swift in Sources */,
+				FB2CB2F7295CD7FC00283B69 /* UIView.swift in Sources */,
 				FB120230295BA8F000626CA6 /* OnboardingViewModel.swift in Sources */,
 				FB120208295B874C00626CA6 /* AppDelegate.swift in Sources */,
 				FB4F8E64295C93D000F61AE9 /* NFT.swift in Sources */,

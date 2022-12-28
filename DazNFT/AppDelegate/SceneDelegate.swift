@@ -16,10 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         configureAppearance()
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        let mainTabBar = MainTabBar()
-        mainTabBar.tabBar.unselectedItemTintColor = .black
-        mainTabBar.tabBar.tintColor = UIColor(hex: "#A49BFEFF")
-        window?.rootViewController = UserDefaults.standard.bool(forKey: "isOnboardingSceneSeen") ? mainTabBar :  OnboardingVC()
+        window?.rootViewController = UserDefaults.standard.bool(forKey: "isOnboardingSceneSeen") ? MainTabBar() :  OnboardingVC()
     }
     
     func configureAppearance() {
@@ -29,18 +26,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
         
-    }
-    
-    func sceneWillResignActive(_ scene: UIScene) {
-        configureAppearance()
-    }
-    
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        configureAppearance()
-    }
-
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        configureAppearance()
     }
     
     func sceneWillEnterForeground(_ scene: UIScene) {

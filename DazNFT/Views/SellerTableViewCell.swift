@@ -108,6 +108,7 @@ class SellerTableViewCell: UITableViewCell {
         button.snp.makeConstraints { make in
             make.width.equalTo(88)
         }
+        button.addTarget(nil, action: #selector(followButtonPressed), for: .touchUpInside)
         return button
     }()
     
@@ -141,6 +142,10 @@ class SellerTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func followButtonPressed() {
+        seller.isFollowing = !seller.isFollowing
     }
     
 }

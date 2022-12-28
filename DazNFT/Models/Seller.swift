@@ -12,7 +12,7 @@ struct SellerModel {
     let profileImageName: String
     let name: String
     let price: String
-    let isFollowing: Bool
+    var isFollowing: Bool
 }
 
 let sellers = [

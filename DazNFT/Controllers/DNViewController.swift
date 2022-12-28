@@ -30,12 +30,9 @@ class DNViewController: UIViewController {
                                 height: phoneHeight)
         
         bottomCircle.frame = .init(x: -300,
-                                   y: phoneHeight * 0.55,
+                                   y: phoneHeight * 0.47,
                                    width: phoneHeight,
                                    height: phoneHeight)
-        
-//        topCircle.frame = .init(x: 48, y: -356, width: 738, height: 738)
-//        bottomCircle.frame = .init(x: -181, y: 270, width: 738, height: 738)
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
