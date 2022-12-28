@@ -52,7 +52,7 @@ class MainTabBar: UITabBarController {
         plusNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 18").withRenderingMode(.alwaysOriginal)
         plusNavVC.tabBarItem.imageInsets = .init(top: -15, left: 0, bottom: 0, right: 0)
         
-        let exploreNavVC = UINavigationController(rootViewController: DNViewController())
+        let exploreNavVC = UINavigationController(rootViewController: ExploreVC())
         exploreNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 24").withRenderingMode(.alwaysTemplate)
         exploreNavVC.tabBarItem.title = "Explore"
         

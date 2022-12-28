@@ -33,8 +33,17 @@ class SearchResultCell: UITableViewCell {
     
     let containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         view.layer.cornerRadius = 10
+        return view
+    }()
+    
+    let seperatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(hex: "#8B939E20")
+        view.snp.makeConstraints { make in
+            make.height.equalTo(1)
+        }
         return view
     }()
     
@@ -106,6 +115,7 @@ class SearchResultCell: UITableViewCell {
         contentView.backgroundColor = .clear
         contentView.addSubview(containerView)
         containerView.addSubview(stackView)
+        containerView.addSubview(seperatorView)
         
         stackView.addArrangedSubview(profileImageView)
         stackView.addArrangedSubview(labelStack)
@@ -125,6 +135,10 @@ class SearchResultCell: UITableViewCell {
         stackView.snp.makeConstraints { make in
             make.top.leading.equalToSuperview().offset(15)
             make.trailing.equalToSuperview().offset(-15)
+        }
+        
+        seperatorView.snp.makeConstraints { make in
+            make.leading.trailing.bottom.equalToSuperview()
         }
     }
 

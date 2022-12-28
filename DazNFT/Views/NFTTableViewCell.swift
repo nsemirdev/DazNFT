@@ -1,21 +1,21 @@
 //
-//  NFTCollectionViewCell.swift
+//  NFTTableViewCell.swift
 //  DazNFT
 //
-//  Created by Emir Alkal on 28.12.2022.
+//  Created by Emir Alkal on 29.12.2022.
 //
 
 import UIKit
-import SnapKit
 
-class NFTCollectionViewCell: UICollectionViewCell {
+class NFTTableViewCell: UITableViewCell {
     
     let phoneHeight = UIScreen.main.bounds.height
-    static let cellId = "NFTCollectionViewCell"
+    static let cellId = "NFTTableViewCell"
+    
     var nftModel: NFT! {
         didSet {
             DispatchQueue.main.async {
-                self.imageView.image = UIImage(named: self.nftModel.imageString)
+                self.nftImage.image = UIImage(named: self.nftModel.imageString)
                 (self.leadingStackView.subviews[0] as! UILabel).text = self.nftModel.name
                 (self.leadingStackView.subviews[1] as! UILabel).text = self.nftModel.author
                 (self.leadingStackView.subviews[2] as! UILabel).text = self.nftModel.passedTime
@@ -24,7 +24,7 @@ class NFTCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    let imageView: UIImageView = {
+    let nftImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "Mask Group")
         return imageView
@@ -90,29 +90,47 @@ class NFTCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        contentView.addSubview(imageView)
-        contentView.addSubview(leadingStackView)
-        contentView.addSubview(trailingStackView)
+    let containerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 20
+        return view
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        contentView.addSubview(containerView)
+        containerView.addSubview(nftImage)
+        containerView.addSubview(leadingStackView)
+        containerView.addSubview(trailingStackView)
+//        contentView.addSubview(nftImage)
+//        contentView.backgroundColor = .blue
+//        contentView.addSubview(leadingStackView)
+//        contentView.addSubview(trailingStackView)
         layout()
     }
     
     fileprivate func layout() {
-        imageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(phoneHeight < 700 ? 1 : 24)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().offset(-20)
+        containerView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.top.equalToSuperview().offset(10)
+            make.bottom.equalToSuperview().offset(-10)
+        }
+        
+        nftImage.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(phoneHeight < 700 ? 24 : 24)
+            make.leading.equalToSuperview().offset(21)
+            make.trailing.equalToSuperview().offset(-21)
         }
         
         leadingStackView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(phoneHeight < 700 ? 10 : 18)
-            make.top.equalTo(imageView.snp.bottom).offset(phoneHeight < 700 ? 4 : 23)
+            make.leading.equalToSuperview().offset(phoneHeight < 700 ? 21 : 21)
+            make.top.equalTo(nftImage.snp.bottom).offset(phoneHeight < 700 ? 20 : 20)
         }
-        
+
         trailingStackView.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(phoneHeight < 700 ? -10 : -18)
-            make.top.equalTo(imageView.snp.bottom).offset(phoneHeight < 700 ? 4 : 23)
+            make.trailing.equalToSuperview().offset(phoneHeight < 700 ? -21 : -21)
+            make.top.equalTo(nftImage.snp.bottom).offset(phoneHeight < 700 ? 20 : 20)
         }
     }
     
