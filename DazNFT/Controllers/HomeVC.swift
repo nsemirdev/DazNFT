@@ -17,6 +17,7 @@ class HomeVC: DNViewController {
         tableView.register(SellerTableViewCell.self, forCellReuseIdentifier: SellerTableViewCell.cellId)
         tableView.rowHeight = 82
         tableView.showsVerticalScrollIndicator = false
+        tableView.allowsSelection = false
         return tableView
     }()
     
@@ -93,6 +94,10 @@ class HomeVC: DNViewController {
             make.trailing.equalToSuperview().offset(-8)
         }
         
+        view.snp.makeConstraints { make in
+            make.height.equalTo(28)
+        }
+        
         return view
     }()
 
@@ -102,7 +107,6 @@ class HomeVC: DNViewController {
         configureNavBar()
         tableView.dataSource = self
         tableView.delegate = self
-        
         collectionView.dataSource = self
         collectionView.delegate = self
         view.addSubview(tableView)
@@ -135,7 +139,7 @@ class HomeVC: DNViewController {
         tableView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
-            make.top.equalTo(tableViewHeader.snp.top).offset(20)
+            make.top.equalTo(tableViewHeader.snp.bottom).offset(20)
             make.bottom.equalToSuperview()
         }
     }

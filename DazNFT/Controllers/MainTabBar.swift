@@ -8,17 +8,16 @@
 import UIKit
 
 class MainTabBar: UITabBarController {
+    let plusView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewControllers()
         configureTabBar()
     }
-    let plusView = UIView()
-
-    fileprivate func configureTabBar() {
+    
+    func configureTabBar() {
         UITabBar.appearance().unselectedItemTintColor = .black
-
         tabBar.layer.cornerRadius = 20
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         tabBar.backgroundColor = .systemBackground
@@ -42,24 +41,23 @@ class MainTabBar: UITabBarController {
     
     fileprivate func configureViewControllers() {
         let homeNavVC = UINavigationController(rootViewController: HomeVC())
-        homeNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 26")
+        homeNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 26").withRenderingMode(.alwaysTemplate)
         homeNavVC.tabBarItem.title = "Home"
-        homeNavVC.navigationBar.prefersLargeTitles = true
         
         let searchNavVC = UINavigationController(rootViewController: DNViewController())
-        searchNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 25")
+        searchNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 25").withRenderingMode(.alwaysTemplate)
         searchNavVC.tabBarItem.title = "Search"
         
         let plusNavVC = UINavigationController(rootViewController: DNViewController())
-        plusNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 18")
+        plusNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 18").withRenderingMode(.alwaysOriginal)
         plusNavVC.tabBarItem.imageInsets = .init(top: -15, left: 0, bottom: 0, right: 0)
         
         let exploreNavVC = UINavigationController(rootViewController: DNViewController())
-        exploreNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 24")
+        exploreNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 24").withRenderingMode(.alwaysTemplate)
         exploreNavVC.tabBarItem.title = "Explore"
         
         let profileNavVC = UINavigationController(rootViewController: DNViewController())
-        profileNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 27")
+        profileNavVC.tabBarItem.image = #imageLiteral(resourceName: "Group 27").withRenderingMode(.alwaysTemplate)
         profileNavVC.tabBarItem.title = "Profile"
         
         setViewControllers([

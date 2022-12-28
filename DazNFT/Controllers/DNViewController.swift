@@ -30,7 +30,7 @@ class DNViewController: UIViewController {
                                 height: phoneHeight)
         
         bottomCircle.frame = .init(x: -300,
-                                   y: phoneHeight * 0.40,
+                                   y: phoneHeight * 0.55,
                                    width: phoneHeight,
                                    height: phoneHeight)
         
@@ -45,6 +45,8 @@ class DNViewController: UIViewController {
         } else {
             view.addSubview(topCircle)
             view.addSubview(bottomCircle)
+            view.sendSubviewToBack(topCircle)
+            view.sendSubviewToBack(bottomCircle)
         }
     }
 }
