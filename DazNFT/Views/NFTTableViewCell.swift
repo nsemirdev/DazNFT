@@ -114,19 +114,19 @@ class NFTTableViewCell: UITableViewCell {
         }
         
         nftImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(phoneHeight < 700 ? 24 : 24)
+            make.top.equalToSuperview().offset(24)
             make.leading.equalToSuperview().offset(21)
             make.trailing.equalToSuperview().offset(-21)
         }
         
         leadingStackView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(phoneHeight < 700 ? 21 : 21)
-            make.top.equalTo(nftImage.snp.bottom).offset(phoneHeight < 700 ? 20 : 20)
+            make.leading.equalToSuperview().offset(21)
+            make.top.equalTo(nftImage.snp.bottom).offset(20)
         }
 
         trailingStackView.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(phoneHeight < 700 ? -21 : -21)
-            make.top.equalTo(nftImage.snp.bottom).offset(phoneHeight < 700 ? 20 : 20)
+            make.trailing.equalToSuperview().offset(-21)
+            make.top.equalTo(nftImage.snp.bottom).offset(20)
         }
     }
     
